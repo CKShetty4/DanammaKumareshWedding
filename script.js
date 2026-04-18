@@ -7,10 +7,10 @@ window.addEventListener("load", () => {
 const params = new URLSearchParams(window.location.search);
 const type = params.get("c");
 
-let names = "Kumaresh & Danamma";
+let names = "Kumaresh 💍 Danamma";
 
 if (type === "bride") {
-  names = "Danamma & Kumaresh";
+  names = "Danamma 💍 Kumaresh";
 }
 
 document.getElementById("names").innerText = names;
