@@ -1,0 +1,158 @@
+body{
+margin:0;
+font-family:'Cormorant Garamond', serif;
+background:#f5f1ea;
+color:#3b2e2a;
+}
+
+/* loader */
+#loader{
+position:fixed;
+width:100%;
+height:100%;
+background:black;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:999;
+}
+
+.spinner{
+width:40px;
+height:40px;
+border:4px solid white;
+border-top:4px solid gold;
+border-radius:50%;
+animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+100%{transform:rotate(360deg);}
+}
+
+/* landing */
+#intro{
+position:fixed;
+width:100%;
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+overflow:hidden;
+}
+
+#bg-video{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-1;
+}
+
+/* card */
+.invite-card{
+background:rgba(255,255,255,0.75);
+backdrop-filter:blur(10px);
+padding:40px;
+border-radius:16px;
+border:2px solid #c7a35f;
+text-align:center;
+max-width:420px;
+box-shadow:0 10px 30px rgba(0,0,0,0.25);
+}
+
+.date{
+font-size:20px;
+font-weight:bold;
+}
+
+#countdown{
+font-size:22px;
+font-weight:bold;
+color:black;
+}
+
+/* button */
+.open-btn{
+background:#f1c232;
+border:none;
+padding:12px 26px;
+border-radius:28px;
+cursor:pointer;
+}
+
+/* site */
+#site{
+display:none;
+background:#faf8f4;
+min-height:100vh;
+}
+
+.container{
+max-width:720px;
+margin:auto;
+padding:30px 18px;
+}
+
+/* posters */
+.story-section{
+text-align:center;
+margin:40px auto;
+}
+
+.story-section img{
+width:100%;
+max-width:620px;
+border-radius:16px;
+display:block;
+margin:auto;
+}
+
+/* borders */
+.cover-main img{
+border:3px solid #a9333c;
+}
+
+.engagement img{
+border:3px solid #8717eb;
+}
+
+/* grid */
+.info-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+margin-top:50px;
+align-items:center;
+}
+
+.info-grid iframe{
+width:100%;
+height:300px;
+border:0;
+border-radius:12px;
+}
+
+.info-text{
+color:#a9333c;
+font-size:16px;
+text-align:center;
+}
+
+.info-text button{
+margin-top:15px;
+background:#a9333c;
+color:white;
+padding:10px 20px;
+border:none;
+border-radius:20px;
+cursor:pointer;
+}
+
+/* mobile */
+@media(max-width:768px){
+.info-grid{
+grid-template-columns:1fr;
+}
+}
+

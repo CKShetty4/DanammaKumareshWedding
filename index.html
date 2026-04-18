@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Engagement Invitation</title>
+
+<!-- Open Graph (WhatsApp Preview) -->
+<meta property="og:title" content="Engagement Invitation">
+<meta property="og:description" content="Join us for our engagement ceremony">
+<meta property="og:image" content="https://wedding.vercel.app/assets/Cover.jpg">
+<meta property="og:url" content="https://wedding.vercel.app">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="spinner"></div>
+</div>
+
+<!-- Landing -->
+<section id="intro">
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="assets/video.mp4" type="video/mp4">
+  </video>
+
+  <div class="invite-card">
+    <h1 id="names"></h1>
+
+    <p>Together with their families invite you</p>
+
+    <div class="date">May 14, 2026</div>
+    <p id="countdown"></p>
+
+    <button class="open-btn" id="openBtn">Open Invitation</button>
+  </div>
+</section>
+
+<!-- Main Site -->
+<section id="site">
+
+  <div class="container">
+
+    <!-- Posters -->
+    <div class="story-section cover-main">
+      <img src="assets/1.jpg">
+    </div>
+
+    <div class="story-section engagement">
+      <img src="assets/2.jpg">
+    </div>
+
+    <!-- Info Section -->
+    <div class="info-grid">
+
+      <!-- Map -->
+      <iframe
+        src="https://maps.google.com/maps?q=Shri%20Banashankari%20Devi%20Kalyana%20Mantapa&t=&z=13&ie=UTF8&iwloc=&output=embed">
+      </iframe>
+
+      <!-- Text -->
+      <div class="info-text">
+        <p>
+        As we embark on a beautiful journey together,<br>
+        we cordially invite you to join us for our Engagement Ceremony.<br><br>
+        Your gracious presence will be a blessing to us<br>
+        and will add joy to this special occasion.<br><br>
+        With warm regards<br>
+        Goudar Family & Friends
+        </p>
+
+        <button onclick="openMap()">View Location</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Music -->
+<audio id="music" loop>
+  <source src="assets/music.mp3">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
